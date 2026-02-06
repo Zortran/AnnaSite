@@ -68,21 +68,19 @@
       }
 
       try {
-        // ВАРИАНТ 1 (рекомендуется): ваш серверный endpoint
-        // const res = await fetch("/api/contact", {
-        //   method: "POST",
-        //   headers: { "Content-Type": "application/json" },
-        //   body: JSON.stringify(payload)
-        // });
-        // if (!res.ok) throw new Error("Bad response");
+        // Отправка через почтовый клиент пользователя (mailto)
+        const to = "anna@kavpush.ru";
+        const subject = encodeURIComponent("Запрос с сайта");
+        const body = encodeURIComponent(
+          `Имя: ${payload.name}\nКонтакт: ${payload.contact}\n\nСообщение:\n${payload.message}`
+        );
 
-        // Демо-режим:
-        await new Promise(r => setTimeout(r, 450));
+        window.location.href = `mailto:${to}?subject=${subject}&body=${body}`;
 
-        if (note) note.textContent = "Спасибо. Я вернусь с ответом по указанному контакту.";
+        if (note) note.textContent = "Открываю почтовый клиент…";
         form.reset();
       } catch (err) {
-        if (note) note.textContent = "Не удалось отправить. Попробуйте позже или свяжитесь напрямую.";
+        if (note) note.textContent = "Не удалось подготовить письмо. Свяжитесь напрямую по адресу anna@kavpush.ru.";
       }
     });
   }
