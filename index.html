@@ -1,0 +1,431 @@
+<!-- index.html -->
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="light" />
+  <meta name="description" content="Финансы под контролем. Без паники и авралов." />
+  <title>Анна Кавпуш — Финансы без хаоса</title>
+
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+
+<body>
+  <a class="skip" href="#screen-1">Перейти к содержимому</a>
+
+  <header class="topbar" aria-label="Навигация">
+    <nav class="nav">
+      <a class="brand" href="#screen-1" aria-label="На обложку">Анна Кавпуш</a>
+      <div class="nav__links">
+        <a href="#screen-4">Обо мне</a>
+        <a href="#screen-5">Как работаю</a>
+        <a href="#screen-9" class="nav__cta">Контакт</a>
+      </div>
+    </nav>
+    <div class="hairline"></div>
+  </header>
+
+  <main>
+
+    <!-- 1. ОБЛОЖКА -->
+    <section id="screen-1" class="screen screen--cover bg-soft" data-parallax>
+      <div class="container cover">
+        <div class="cover__text">
+          <p class="kicker reveal">Анна Кавпуш · финансовый директор</p>
+          <h1 class="h1 reveal">Финансы без хаоса</h1>
+          <p class="lead reveal">
+            Финансы под контролем.<br />
+            Без паники и авралов.
+          </p>
+          <p class="sublead reveal">Чтобы стало понятно, с чего начинать.</p>
+
+          <div class="cover__actions reveal">
+            <a class="btn" href="#screen-9">Обсудить задачу</a>
+            <a class="btn btn--ghost" href="assets/pdf/about.pdf" download>Скачать кратко обо мне</a>
+          </div>
+        </div>
+
+        <figure class="cover__figure reveal" aria-label="Портрет">
+          <!-- Локальные файлы (переименуйте как указано):
+               assets/img/anna-portrait-1.png
+               assets/img/anna-portrait-2.png -->
+          <picture>
+            <source srcset="assets/img/anna-portrait-2.png" type="image/png" />
+            <img src="assets/img/anna-portrait-1.png" alt="Анна Кавпуш, портрет" loading="eager" />
+          </picture>
+          <figcaption class="caption">Спокойствие начинается с ясности.</figcaption>
+        </figure>
+      </div>
+
+      <div class="bg-pattern" aria-hidden="true"></div>
+    </section>
+
+    <!-- 2. РЕАЛЬНОСТЬ КЛИЕНТА -->
+    <section id="screen-2" class="screen bg-white">
+      <div class="container">
+        <div class="headline">
+          <h2 class="h2 reveal">Когда деньги есть — но их не видно</h2>
+          
+        </div>
+
+        <div class="notes">
+          <article class="note reveal" style="--d: 0ms">
+            <div class="note__line"></div>
+            <p class="note__title">Платежи “с колес”</p>
+            <p class="note__text">Решения принимаются на ходу — без карты приоритетов.</p>
+          </article>
+
+          <article class="note reveal" style="--d: 120ms">
+            <div class="note__line"></div>
+            <p class="note__title">Кассовые разрывы</p>
+            <p class="note__text">Разрывы возникают внезапно, даже при хорошей выручке.</p>
+          </article>
+
+          <article class="note reveal" style="--d: 240ms">
+            <div class="note__line"></div>
+            <p class="note__title">Нет прогноза</p>
+            <p class="note__text">Планы строятся “по ощущениям”, а не по фактам.</p>
+          </article>
+
+          <article class="note reveal" style="--d: 360ms">
+            <div class="note__line"></div>
+            <p class="note__title">Экономия вслепую</p>
+            <p class="note__text">Сокращают расходы, не понимая влияния на результат.</p>
+          </article>
+
+          <article class="note reveal" style="--d: 480ms">
+            <div class="note__line"></div>
+            <p class="note__title">Решения в стрессе</p>
+            <p class="note__text">Когда нет прозрачности — даже простые вопросы звучат тревожно.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. ТОЧКА ПОВОРОТА -->
+    <section id="screen-3" class="screen bg-soft">
+      <div class="container">
+        <div class="turn">
+          <div class="paper reveal">
+            <h2 class="h2">Давайте посмотрим, что есть сейчас</h2>
+            <ul class="bullets">
+              <li>без паники</li>
+              <li>через цифры</li>
+              <li>через факты</li>
+              <li>без иллюзий</li>
+            </ul>
+            <p class="muted">
+              Сначала — диагностика и ясность. Потом — система и контроль.
+            </p>
+          </div>
+
+          <figure class="turn__figure reveal" aria-label="Иллюстрация">
+            <!-- Локальный файл (переименуйте как указано):
+                 assets/img/screen-3-illustration.png -->
+            <img src="assets/img/screen-3-illustration.png" alt="Иллюстрация: диагностика и контроль" loading="lazy" />
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. ОБО МНЕ -->
+    <section id="screen-4" class="screen bg-white">
+      <div class="container about">
+        <figure class="about__photo reveal" aria-label="Фото">
+          <picture>
+            <source srcset="assets/img/anna-portrait-1.png" type="image/png" />
+            <img src="assets/img/anna-portrait-2.png" alt="Анна Кавпуш, портрет" loading="lazy" />
+          </picture>
+          <div class="photo__overlay" aria-hidden="true"></div>
+        </figure>
+
+        <div class="about__text">
+          <h2 class="h2 reveal">Опыт, который даёт опору</h2>
+          <p class="lead reveal">
+            Работаю с финансовой системой так, чтобы в компании появлялись порядок и спокойствие — без ручного режима и авралов.
+          </p>
+
+          <div class="facts">
+            <div class="fact reveal"><span class="fact__num">20+</span><span class="fact__label">лет опыта</span></div>
+            <div class="fact reveal"><span class="fact__num">B2B</span><span class="fact__label">производство</span></div>
+            <div class="fact reveal"><span class="fact__num">ROI</span><span class="fact__label">инвестиции</span></div>
+            <div class="fact reveal"><span class="fact__num">IT</span><span class="fact__label">автоматизация</span></div>
+          </div>
+
+          <p class="muted reveal">
+            Здесь нет саморекламы — только факты и аккуратная работа с реальностью.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. ЧТО Я ДЕЛАЮ -->
+    <section id="screen-5" class="screen bg-soft">
+      <div class="container">
+        <div class="headline">
+          <h2 class="h2 reveal">Как появляется порядок</h2>
+          <p class="muted reveal">Путь — по шагам. Ритм — спокойный.</p>
+        </div>
+
+        <div class="timeline" aria-label="Этапы работы">
+          <div class="timeline__rail" aria-hidden="true"></div>
+
+          <article class="step reveal">
+            <div class="dot" aria-hidden="true"></div>
+            <div class="card">
+              <h3 class="h3">Диагностика</h3>
+              <p>Фиксируем текущую картину: деньги, обязательства, процессы.</p>
+            </div>
+          </article>
+
+          <article class="step reveal">
+            <div class="dot" aria-hidden="true"></div>
+            <div class="card">
+              <h3 class="h3">Приоритеты</h3>
+              <p>Определяем, что важно сейчас, и что можно отложить без риска.</p>
+            </div>
+          </article>
+
+          <article class="step reveal">
+            <div class="dot" aria-hidden="true"></div>
+            <div class="card">
+              <h3 class="h3">ДДС</h3>
+              <p>Строим управляемый денежный поток и правила платежей.</p>
+            </div>
+          </article>
+
+          <article class="step reveal">
+            <div class="dot" aria-hidden="true"></div>
+            <div class="card">
+              <h3 class="h3">Бюджет</h3>
+              <p>Бюджет как инструмент, а не формальность — с ответственностью по статьям.</p>
+            </div>
+          </article>
+
+          <article class="step reveal">
+            <div class="dot" aria-hidden="true"></div>
+            <div class="card">
+              <h3 class="h3">Автоматизация</h3>
+              <p>Снимаем ручной труд: согласования, отчётность, контроль.</p>
+            </div>
+          </article>
+
+          <article class="step reveal">
+            <div class="dot" aria-hidden="true"></div>
+            <div class="card">
+              <h3 class="h3">Контроль</h3>
+              <p>Регулярный контур управления: метрики, ритм, прозрачность.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. СИСТЕМА -->
+    <section id="screen-6" class="screen bg-white">
+      <div class="container">
+        <div class="headline">
+          <h2 class="h2 reveal">Финансы, которые работают без ручного режима</h2>
+          
+        </div>
+
+        <div class="dashboard">
+          <div class="tile reveal">
+            <p class="tile__k">Отчётность</p>
+            <p class="tile__v">P&amp;L / ДДС / Баланс</p>
+            <div class="spark" aria-hidden="true"></div>
+          </div>
+          <div class="tile reveal">
+            <p class="tile__k">Контроль</p>
+            <p class="tile__v">лимиты / отклонения</p>
+            <div class="spark" aria-hidden="true"></div>
+          </div>
+          <div class="tile reveal">
+            <p class="tile__k">Согласования</p>
+            <p class="tile__v">маршруты / статусы</p>
+            <div class="spark" aria-hidden="true"></div>
+          </div>
+          <div class="tile reveal">
+            <p class="tile__k">Прогноз</p>
+            <p class="tile__v">касса / сценарии</p>
+            <div class="spark" aria-hidden="true"></div>
+          </div>
+          <div class="tile tile--wide reveal">
+            <p class="tile__k">ИИ и автоматизация</p>
+            <p class="tile__v">помогают видеть картину быстрее и держать ритм управления</p>
+            <p class="tile__hint">Без “магии”: только измеримые правила и данные.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. КЕЙСЫ -->
+    <section id="screen-7" class="screen bg-soft">
+      <div class="container">
+        <div class="headline">
+          <h2 class="h2 reveal">Кейсы</h2>
+          <p class="muted reveal">Факты. Структура. Без лишних слов.</p>
+        </div>
+
+        <div class="accordion">
+          <details class="acc reveal" name="cases">
+            <summary class="acc__summary">
+              <span class="acc__title">ООО «Старлесс Трейд»</span>
+              <span class="acc__meta">производство чековой ленты и этикетки</span>
+              <span class="acc__chev" aria-hidden="true"></span>
+            </summary>
+
+            <div class="acc__content">
+              <div class="acc__grid">
+                <section class="acc__block">
+                  <h3 class="h3">Задачи</h3>
+                  <ul class="acc__list">
+                    <li>сделать финансы понятными и управляемыми для инвесторов;</li>
+                    <li>взять под контроль денежный поток;</li>
+                    <li>перестроить управленческую модель;</li>
+                    <li>поддержать привлечение и реструктуризацию финансирования.</li>
+                  </ul>
+                </section>
+
+                <section class="acc__block">
+                  <h3 class="h3">Решения</h3>
+                  <ul class="acc__list">
+                    <li>переработана модель управленческого учёта: БДР и БДС без НДС;</li>
+                    <li>внедрено бюджетирование и план–факт контроль с нуля;</li>
+                    <li>построено казначейство: платёжный календарь, лимиты, регламенты, согласование платежей, автоматическая проверка соответствия бюджету.</li>
+                  </ul>
+                </section>
+
+                <section class="acc__block acc__block--wide">
+                  <h3 class="h3">Результат</h3>
+                  <ul class="acc__list">
+                    <li>управленческая отчётность приведена к стандартам инвесторов, принята и используется (ежемесячно);</li>
+                    <li>денежный поток стал планируемым: платежи 3 раза в неделю по регламенту, отказ от экстренных решений «по факту поступления денег», повышена платёжная дисциплина и управляемость ликвидности;</li>
+                    <li>сохранена положительная маржинальность при росте себестоимости;</li>
+                    <li>обеспечено финансирование бизнеса на сумму 250 млн руб. (новый долг + реструктуризация).</li>
+                  </ul>
+                </section>
+              </div>
+            </div>
+          </details>
+
+          <details class="acc reveal" name="cases">
+            <summary class="acc__summary">
+              <span class="acc__title">ООО «ПКФ «МираМет»</span>
+              <span class="acc__meta">литейное производство трубопроводной продукции</span>
+              <span class="acc__chev" aria-hidden="true"></span>
+            </summary>
+
+            <div class="acc__content">
+              <div class="acc__grid">
+                <section class="acc__block">
+                  <h3 class="h3">Задачи</h3>
+                  <p class="muted">
+                    Обеспечить управляемость себестоимости и масштабируемость финансовых процессов.
+                  </p>
+                </section>
+
+                <section class="acc__block">
+                  <h3 class="h3">Решения</h3>
+                  <ul class="acc__list">
+                    <li>внедрение 1С:УПП;</li>
+                    <li>автоматизация расчёта калькуляции трубопроводных изделий;</li>
+                    <li>сокращение сроков подготовки управленческой отчётности.</li>
+                  </ul>
+                </section>
+
+                <section class="acc__block acc__block--wide">
+                  <h3 class="h3">Результат</h3>
+                  <ul class="acc__list">
+                    <li>рост выручки компании в 2 раза;</li>
+                    <li>получена прозрачная производственная себестоимость для управленческих решений.</li>
+                  </ul>
+                </section>
+              </div>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. ДЛЯ КОГО / НЕ ДЛЯ КОГО -->
+    <section id="screen-8" class="screen bg-white">
+      <div class="container">
+        <div class="headline">
+          <h2 class="h2 reveal">Принципы работы</h2>
+          <p class="muted reveal">Честно: кому подойдёт и кому нет.</p>
+        </div>
+
+        <div class="two-col">
+          <div class="col col--for reveal">
+            <h3 class="h3">Для</h3>
+            <ul class="checklist">
+              <li>✔ ответственность</li>
+              <li>✔ открытость</li>
+              <li>✔ готовность смотреть на факты</li>
+              <li>✔ уважение к процессу</li>
+            </ul>
+          </div>
+
+          <div class="col col--not reveal">
+            <h3 class="h3">Не для</h3>
+            <ul class="checklist">
+              <li>✘ давление</li>
+              <li>✘ перекладывание вины</li>
+              <li>✘ ожидание “чуда без данных”</li>
+              <li>✘ работа в режиме постоянного пожара</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. КОНТАКТ -->
+    <section id="screen-9" class="screen bg-soft">
+      <div class="container contact">
+        <div class="contact__text">
+          <h2 class="h2 reveal">Начнём с разговора</h2>
+          
+          <p class="muted reveal">
+            Почта: <a href="mailto:anna@kavpush.ru">anna@kavpush.ru</a>
+          </p>
+          <p class="muted reveal">
+            Напишите на почту или оставьте запрос в форме — отвечу по указанному контакту.
+          </p>
+        </div>
+
+        <form class="form reveal" id="contactForm" autocomplete="on">
+          <label>
+            <span>Имя</span>
+            <input name="name" type="text" required maxlength="80" />
+          </label>
+
+          <label>
+            <span>Контакт</span>
+            <input name="contact" type="text" required maxlength="120" placeholder="Телефон или email" />
+          </label>
+
+          <label>
+            <span>Суть запроса</span>
+            <textarea name="message" rows="4" required maxlength="1200"></textarea>
+          </label>
+
+          <button class="btn" type="submit">Отправить</button>
+          <p class="form__note" id="formNote" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__row">
+      <p class="muted">© <span id="year"></span> Анна Кавпуш</p>
+      
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
